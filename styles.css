@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fundo.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#chat {
+    border: 1px solid #ccc;
+    max-width: 600px;
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5ddd5;
+    justify-content: flex-end;
+    max-height: 80vh; /* Limita a altura para permitir rolagem */
+    scroll-behavior: smooth; /* Adiciona rolagem suave */
+}
+
+.message-container {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+.message.user {
+    background-color: #dcf8c6;
+    text-align: right;
+    border-top-right-radius: 0;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: left;
+    border-top-left-radius: 0;
+    align-self: flex-start;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.more-button, button.final-button {
+    align-self: center;
+    margin: 10px 0;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0;
+}
+
+.img-print {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px 0;
+}
